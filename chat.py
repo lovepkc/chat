@@ -26,7 +26,7 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 
 def get_reply(user_input):
     completion = client.chat.completions.create(
-        model='gpt-3.5-turbo',
+        model='gpt-4o',
         messages=[
             {"role":"system", "content":db.PROMPT},
             {"role":"user", 
